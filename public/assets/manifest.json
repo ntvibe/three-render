@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "path": "public/assets/backdrop.gltf",
+      "license": "CC0-1.0",
+      "origin": "Original procedural geometry, geometric artwork, or example scene",
+      "sha256": "e00ecd62d9271dbf9e8548f0a910ff224ca99aea09bbc7aee57d96d804483efc"
+    },
+    {
+      "path": "public/assets/glass_panel.gltf",
+      "license": "CC0-1.0",
+      "origin": "Original procedural geometry, geometric artwork, or example scene",
+      "sha256": "b8ad0625735208792470bcbc45d8389308a1ade7aa1b0eb223e65e5cf1d50104"
+    },
+    {
+      "path": "public/catalog/thumbs/backdrop.svg",
+      "license": "CC0-1.0",
+      "origin": "Original procedural geometry, geometric artwork, or example scene",
+      "sha256": "04f4eda0b2b56e68c6c69f73e05c0a7b42ec3788f7efccf986517f0f5913d0a0"
+    },
+    {
+      "path": "public/catalog/thumbs/glass-panel.svg",
+      "license": "CC0-1.0",
+      "origin": "Original procedural geometry, geometric artwork, or example scene",
+      "sha256": "a7f32bb6d078450ea22ad3db8891847c7e55fee56637fdc53c77908422dfea97"
+    },
+    {
+      "path": "public/catalog/thumbs/environment.svg",
+      "license": "CC0-1.0",
+      "origin": "Original procedural geometry, geometric artwork, or example scene",
+      "sha256": "ace258ae1a8dc1ac2e2a412c321f4e1b528085870b4fb6a4046cb3c29b2ff573"
+    },
+    {
+      "path": "public/examples/glass-dispersion.studio.json",
+      "license": "CC0-1.0",
+      "origin": "Original procedural geometry, geometric artwork, or example scene",
+      "sha256": "c6cbfa5dcbcd687de5838f71fe535f0726c4081210f8691dd580088f0fff0bce"
+    },
+    {
+      "path": "public/examples/area-aperture.studio.json",
+      "license": "CC0-1.0",
+      "origin": "Original procedural geometry, geometric artwork, or example scene",
+      "sha256": "63acd284a766fffd8c61b5c8521c5aa268f182bb5c695944b2b26782945515b3"
+    },
+    {
+      "path": "src/icons.tsx",
+      "license": "CC0-1.0",
+      "origin": "Original procedural geometry, geometric artwork, or example scene",
+      "sha256": "bb0e4b826883e6a446e0a106113dc7ef85df7d2d2da4b0f61054b95505bccb0b"
+    },
+    {
+      "path": "src/components/PrimitiveIcon.tsx",
+      "license": "CC0-1.0",
+      "origin": "Original procedural geometry, geometric artwork, or example scene",
+      "sha256": "dab1b8257f24bcf4ccbe132653c5ca38f3351b54c5372b32b003ee93cd2d6427"
+    },
+    {
+      "path": "docs/images/editor.png",
+      "license": "CC0-1.0",
+      "origin": "Original procedural geometry, geometric artwork, or example scene",
+      "sha256": "5f8708af235a24945e934c3b759fff815cbec02cd5c29970c4e86dfd9e860ef4"
+    },
+    {
+      "path": "public/assets/studio_small_09_1k.hdr",
+      "license": "CC0-1.0",
+      "author": "Sergej Majboroda / Poly Haven",
+      "source": "https://polyhaven.com/a/studio_small_09",
+      "licenseUrl": "https://polyhaven.com/license",
+      "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_09_1k.hdr",
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45"
+    }
+  ]
+}

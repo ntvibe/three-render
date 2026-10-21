@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "title": "Starter Library",
+  "items": [
+    {
+      "id": "backdrop",
+      "name": "Studio Backdrop",
+      "category": "staging",
+      "tags": [
+        "backdrop",
+        "studio",
+        "floor",
+        "curved"
+      ],
+      "thumbnail": "/catalog/thumbs/backdrop.svg",
+      "sourceAsset": "/assets/backdrop.gltf",
+      "kind": "model",
+      "pivotHint": "floor",
+      "defaultScale": [
+        1,
+        1,
+        1
+      ],
+      "boundingBox": {
+        "min": [
+          -3,
+          0,
+          -3
+        ],
+        "max": [
+          3,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "id": "glass-panel",
+      "name": "Glass Panel",
+      "category": "props",
+      "tags": [
+        "glass",
+        "panel",
+        "display"
+      ],
+      "thumbnail": "/catalog/thumbs/glass-panel.svg",
+      "sourceAsset": "/assets/glass_panel.gltf",
+      "kind": "model",
+      "pivotHint": "centered",
+      "defaultScale": [
+        1,
+        1,
+        1
+      ],
+      "boundingBox": {
+        "min": [
+          -0.1,
+          0,
+          -0.004
+        ],
+        "max": [
+          0.1,
+          0.2,
+          0.004
+        ]
+      }
+    },
+    {
+      "id": "studio-hdri",
+      "name": "Studio Small 09 (CC0)",
+      "category": "environments",
+      "tags": [
+        "hdri",
+        "studio",
+        "lighting",
+        "poly haven",
+        "cc0"
+      ],
+      "thumbnail": "/catalog/thumbs/environment.svg",
+      "sourceAsset": "/assets/studio_small_09_1k.hdr",
+      "kind": "environment",
+      "pivotHint": "centered",
+      "defaultScale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

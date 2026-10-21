@@ -1,0 +1,807 @@
+{
+  "project": {
+    "version": 1,
+    "name": "Glass Dispersion Study",
+    "rootNodeIds": [
+      "node_42662b44-c2fa-4834-8674-6420dc6514d8",
+      "node_3bfbca1b-c00f-4bb7-87f8-15375080c02c",
+      "node_d5920ba0-6931-4843-b53f-8a9ba399f8dc",
+      "node_ac664c12-c568-42c7-93eb-aadc9dd74a69",
+      "node_03095d82-f7f4-4905-b84c-56d4f0a14bee",
+      "node_88e5b581-7fca-40f0-9332-1bafdd9b5075",
+      "node_e885a3cf-d018-4c03-8e81-79d5a6bc9b8f",
+      "node_b12b320a-a8a1-4b26-953d-12fa6c6340f1",
+      "node_c570d381-dc3e-4a77-9a12-6690059966e7",
+      "node_330b56ae-9968-4d6c-9dab-6e2624cd07c6"
+    ],
+    "nodes": {
+      "node_42662b44-c2fa-4834-8674-6420dc6514d8": {
+        "id": "node_42662b44-c2fa-4834-8674-6420dc6514d8",
+        "name": "Glass Sphere",
+        "nodeType": "asset",
+        "assetId": "asset_395cdc65-ffa0-494f-851d-5d7ae2d61c08",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_395cdc65-ffa0-494f-851d-5d7ae2d61c08::binding::0:0": "glass"
+        },
+        "primitiveParameters": {
+          "radius": 0.11,
+          "radialSegments": 64,
+          "heightSegments": 32
+        }
+      },
+      "node_3bfbca1b-c00f-4bb7-87f8-15375080c02c": {
+        "id": "node_3bfbca1b-c00f-4bb7-87f8-15375080c02c",
+        "name": "White stripe",
+        "nodeType": "asset",
+        "assetId": "asset_fccff485-86c2-44ea-aa41-a6b67a5c9c04",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            -0.24,
+            -0.15,
+            -0.26
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_fccff485-86c2-44ea-aa41-a6b67a5c9c04::binding::0:0": "white"
+        },
+        "primitiveParameters": {
+          "width": 0.012,
+          "height": 0.6,
+          "depth": 0.01,
+          "widthSegments": 1,
+          "heightSegments": 1,
+          "depthSegments": 1,
+          "fillet": 0,
+          "filletSegments": 3
+        }
+      },
+      "node_d5920ba0-6931-4843-b53f-8a9ba399f8dc": {
+        "id": "node_d5920ba0-6931-4843-b53f-8a9ba399f8dc",
+        "name": "White stripe",
+        "nodeType": "asset",
+        "assetId": "asset_9bc9c9d3-bae8-4f94-a7cb-65fdb7e2decf",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            -0.18,
+            -0.15,
+            -0.26
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_9bc9c9d3-bae8-4f94-a7cb-65fdb7e2decf::binding::0:0": "white"
+        },
+        "primitiveParameters": {
+          "width": 0.012,
+          "height": 0.6,
+          "depth": 0.01,
+          "widthSegments": 1,
+          "heightSegments": 1,
+          "depthSegments": 1,
+          "fillet": 0,
+          "filletSegments": 3
+        }
+      },
+      "node_ac664c12-c568-42c7-93eb-aadc9dd74a69": {
+        "id": "node_ac664c12-c568-42c7-93eb-aadc9dd74a69",
+        "name": "White stripe",
+        "nodeType": "asset",
+        "assetId": "asset_9ab857f4-354d-47ce-bd76-29c35382bcca",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            -0.12,
+            -0.15,
+            -0.26
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_9ab857f4-354d-47ce-bd76-29c35382bcca::binding::0:0": "white"
+        },
+        "primitiveParameters": {
+          "width": 0.012,
+          "height": 0.6,
+          "depth": 0.01,
+          "widthSegments": 1,
+          "heightSegments": 1,
+          "depthSegments": 1,
+          "fillet": 0,
+          "filletSegments": 3
+        }
+      },
+      "node_03095d82-f7f4-4905-b84c-56d4f0a14bee": {
+        "id": "node_03095d82-f7f4-4905-b84c-56d4f0a14bee",
+        "name": "White stripe",
+        "nodeType": "asset",
+        "assetId": "asset_9588d6a2-6403-4fa1-9d3f-e1d83190bd32",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            -0.06,
+            -0.15,
+            -0.26
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_9588d6a2-6403-4fa1-9d3f-e1d83190bd32::binding::0:0": "white"
+        },
+        "primitiveParameters": {
+          "width": 0.012,
+          "height": 0.6,
+          "depth": 0.01,
+          "widthSegments": 1,
+          "heightSegments": 1,
+          "depthSegments": 1,
+          "fillet": 0,
+          "filletSegments": 3
+        }
+      },
+      "node_88e5b581-7fca-40f0-9332-1bafdd9b5075": {
+        "id": "node_88e5b581-7fca-40f0-9332-1bafdd9b5075",
+        "name": "White stripe",
+        "nodeType": "asset",
+        "assetId": "asset_ed5e398f-b087-42c1-99c8-73a5e17e60d3",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            0,
+            -0.15,
+            -0.26
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_ed5e398f-b087-42c1-99c8-73a5e17e60d3::binding::0:0": "white"
+        },
+        "primitiveParameters": {
+          "width": 0.012,
+          "height": 0.6,
+          "depth": 0.01,
+          "widthSegments": 1,
+          "heightSegments": 1,
+          "depthSegments": 1,
+          "fillet": 0,
+          "filletSegments": 3
+        }
+      },
+      "node_e885a3cf-d018-4c03-8e81-79d5a6bc9b8f": {
+        "id": "node_e885a3cf-d018-4c03-8e81-79d5a6bc9b8f",
+        "name": "White stripe",
+        "nodeType": "asset",
+        "assetId": "asset_22696d13-86bf-472c-9bc2-267d1db0b917",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            0.06,
+            -0.15,
+            -0.26
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_22696d13-86bf-472c-9bc2-267d1db0b917::binding::0:0": "white"
+        },
+        "primitiveParameters": {
+          "width": 0.012,
+          "height": 0.6,
+          "depth": 0.01,
+          "widthSegments": 1,
+          "heightSegments": 1,
+          "depthSegments": 1,
+          "fillet": 0,
+          "filletSegments": 3
+        }
+      },
+      "node_b12b320a-a8a1-4b26-953d-12fa6c6340f1": {
+        "id": "node_b12b320a-a8a1-4b26-953d-12fa6c6340f1",
+        "name": "White stripe",
+        "nodeType": "asset",
+        "assetId": "asset_0a303bcc-c780-4f55-a5b0-cee9581ce876",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            0.12,
+            -0.15,
+            -0.26
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_0a303bcc-c780-4f55-a5b0-cee9581ce876::binding::0:0": "white"
+        },
+        "primitiveParameters": {
+          "width": 0.012,
+          "height": 0.6,
+          "depth": 0.01,
+          "widthSegments": 1,
+          "heightSegments": 1,
+          "depthSegments": 1,
+          "fillet": 0,
+          "filletSegments": 3
+        }
+      },
+      "node_c570d381-dc3e-4a77-9a12-6690059966e7": {
+        "id": "node_c570d381-dc3e-4a77-9a12-6690059966e7",
+        "name": "White stripe",
+        "nodeType": "asset",
+        "assetId": "asset_a5b73c75-3bf8-4e8f-b2f3-d3b4551dbe60",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            0.18,
+            -0.15,
+            -0.26
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_a5b73c75-3bf8-4e8f-b2f3-d3b4551dbe60::binding::0:0": "white"
+        },
+        "primitiveParameters": {
+          "width": 0.012,
+          "height": 0.6,
+          "depth": 0.01,
+          "widthSegments": 1,
+          "heightSegments": 1,
+          "depthSegments": 1,
+          "fillet": 0,
+          "filletSegments": 3
+        }
+      },
+      "node_330b56ae-9968-4d6c-9dab-6e2624cd07c6": {
+        "id": "node_330b56ae-9968-4d6c-9dab-6e2624cd07c6",
+        "name": "White stripe",
+        "nodeType": "asset",
+        "assetId": "asset_04327164-598d-42c0-a738-e92522398cea",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            0.24,
+            -0.15,
+            -0.26
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_04327164-598d-42c0-a738-e92522398cea::binding::0:0": "white"
+        },
+        "primitiveParameters": {
+          "width": 0.012,
+          "height": 0.6,
+          "depth": 0.01,
+          "widthSegments": 1,
+          "heightSegments": 1,
+          "depthSegments": 1,
+          "fillet": 0,
+          "filletSegments": 3
+        }
+      }
+    },
+    "assets": {
+      "asset_d1af1946-0ead-4cf6-95a1-e22497a3ba92": {
+        "id": "asset_d1af1946-0ead-4cf6-95a1-e22497a3ba92",
+        "name": "Studio Small 09 (CC0)",
+        "kind": "environment",
+        "sourceKind": "catalog",
+        "sourceUri": "/assets/studio_small_09_1k.hdr",
+        "mimeType": "image/vnd.radiance",
+        "thumbnail": "/catalog/thumbs/environment.svg",
+        "catalogItemId": "studio-hdri",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "centered",
+        "meshBindings": []
+      },
+      "asset_395cdc65-ffa0-494f-851d-5d7ae2d61c08": {
+        "id": "asset_395cdc65-ffa0-494f-851d-5d7ae2d61c08",
+        "name": "Sphere",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "sphere",
+        "sourceUri": "primitive:sphere",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_395cdc65-ffa0-494f-851d-5d7ae2d61c08::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      },
+      "asset_fccff485-86c2-44ea-aa41-a6b67a5c9c04": {
+        "id": "asset_fccff485-86c2-44ea-aa41-a6b67a5c9c04",
+        "name": "Cube",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "cube",
+        "sourceUri": "primitive:cube",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_fccff485-86c2-44ea-aa41-a6b67a5c9c04::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      },
+      "asset_9bc9c9d3-bae8-4f94-a7cb-65fdb7e2decf": {
+        "id": "asset_9bc9c9d3-bae8-4f94-a7cb-65fdb7e2decf",
+        "name": "Cube",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "cube",
+        "sourceUri": "primitive:cube",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_9bc9c9d3-bae8-4f94-a7cb-65fdb7e2decf::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      },
+      "asset_9ab857f4-354d-47ce-bd76-29c35382bcca": {
+        "id": "asset_9ab857f4-354d-47ce-bd76-29c35382bcca",
+        "name": "Cube",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "cube",
+        "sourceUri": "primitive:cube",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_9ab857f4-354d-47ce-bd76-29c35382bcca::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      },
+      "asset_9588d6a2-6403-4fa1-9d3f-e1d83190bd32": {
+        "id": "asset_9588d6a2-6403-4fa1-9d3f-e1d83190bd32",
+        "name": "Cube",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "cube",
+        "sourceUri": "primitive:cube",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_9588d6a2-6403-4fa1-9d3f-e1d83190bd32::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      },
+      "asset_ed5e398f-b087-42c1-99c8-73a5e17e60d3": {
+        "id": "asset_ed5e398f-b087-42c1-99c8-73a5e17e60d3",
+        "name": "Cube",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "cube",
+        "sourceUri": "primitive:cube",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_ed5e398f-b087-42c1-99c8-73a5e17e60d3::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      },
+      "asset_22696d13-86bf-472c-9bc2-267d1db0b917": {
+        "id": "asset_22696d13-86bf-472c-9bc2-267d1db0b917",
+        "name": "Cube",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "cube",
+        "sourceUri": "primitive:cube",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_22696d13-86bf-472c-9bc2-267d1db0b917::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      },
+      "asset_0a303bcc-c780-4f55-a5b0-cee9581ce876": {
+        "id": "asset_0a303bcc-c780-4f55-a5b0-cee9581ce876",
+        "name": "Cube",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "cube",
+        "sourceUri": "primitive:cube",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_0a303bcc-c780-4f55-a5b0-cee9581ce876::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      },
+      "asset_a5b73c75-3bf8-4e8f-b2f3-d3b4551dbe60": {
+        "id": "asset_a5b73c75-3bf8-4e8f-b2f3-d3b4551dbe60",
+        "name": "Cube",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "cube",
+        "sourceUri": "primitive:cube",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_a5b73c75-3bf8-4e8f-b2f3-d3b4551dbe60::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      },
+      "asset_04327164-598d-42c0-a738-e92522398cea": {
+        "id": "asset_04327164-598d-42c0-a738-e92522398cea",
+        "name": "Cube",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "cube",
+        "sourceUri": "primitive:cube",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_04327164-598d-42c0-a738-e92522398cea::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      }
+    },
+    "materials": {
+      "glass": {
+        "id": "glass",
+        "name": "Dispersive Glass",
+        "color": "#ffffff",
+        "emissive": "#000000",
+        "emissiveIntensity": 0,
+        "roughness": 0.005,
+        "metalness": 0,
+        "specularIntensity": 1,
+        "specularColor": "#ffffff",
+        "transmission": 1,
+        "ior": 1.62,
+        "thickness": 0.22,
+        "attenuationColor": "#ffffff",
+        "attenuationDistance": 0,
+        "clearcoat": 0,
+        "clearcoatRoughness": 0,
+        "sheen": 0,
+        "sheenColor": "#ffffff",
+        "sheenRoughness": 1,
+        "iridescence": 0,
+        "iridescenceIOR": 1.3,
+        "iridescenceThicknessMin": 100,
+        "iridescenceThicknessMax": 400,
+        "anisotropy": 0,
+        "anisotropyRotation": 0,
+        "dispersion": 1,
+        "opacity": 1,
+        "transparent": false,
+        "thinWalled": false
+      },
+      "white": {
+        "id": "white",
+        "name": "White target",
+        "color": "#ffffff",
+        "emissive": "#ffffff",
+        "emissiveIntensity": 2,
+        "roughness": 0.2,
+        "metalness": 0,
+        "specularIntensity": 1,
+        "specularColor": "#ffffff",
+        "transmission": 0,
+        "ior": 1.5,
+        "thickness": 0,
+        "attenuationColor": "#ffffff",
+        "attenuationDistance": 0,
+        "clearcoat": 0,
+        "clearcoatRoughness": 0,
+        "sheen": 0,
+        "sheenColor": "#ffffff",
+        "sheenRoughness": 1,
+        "iridescence": 0,
+        "iridescenceIOR": 1.3,
+        "iridescenceThicknessMin": 100,
+        "iridescenceThicknessMax": 400,
+        "anisotropy": 0,
+        "anisotropyRotation": 0,
+        "dispersion": 0,
+        "opacity": 1,
+        "transparent": false
+      }
+    },
+    "cameras": {
+      "cam_3e83e98e-176e-4c6b-a887-1e24ef759dfe": {
+        "id": "cam_3e83e98e-176e-4c6b-a887-1e24ef759dfe",
+        "name": "Main Camera",
+        "projection": "perspective",
+        "position": [
+          0,
+          0.11,
+          0.65
+        ],
+        "target": [
+          0,
+          0.11,
+          0
+        ],
+        "fov": 45,
+        "focalLength": 45,
+        "zoom": 1,
+        "near": 0.001,
+        "far": 200
+      }
+    },
+    "activeCameraId": "cam_3e83e98e-176e-4c6b-a887-1e24ef759dfe",
+    "environment": {
+      "assetId": "asset_d1af1946-0ead-4cf6-95a1-e22497a3ba92",
+      "enabled": true,
+      "rotation": 0,
+      "intensity": 1,
+      "backgroundVisible": false
+    },
+    "renderer": {
+      "mode": "realtime",
+      "exposure": 1,
+      "transparentBackground": false,
+      "live": {
+        "bounces": 6,
+        "transmissionBounces": 24,
+        "renderScale": 0.75,
+        "tiles": 1,
+        "sampleLimit": 128
+      },
+      "render": {
+        "bounces": 8,
+        "transmissionBounces": 32,
+        "sampleLimit": 256,
+        "tiles": 1,
+        "renderScale": 1
+      },
+      "denoise": {
+        "enabled": false,
+        "applyToLive": false,
+        "blend": 0.6,
+        "maxTileSize": 512
+      }
+    },
+    "metadata": {
+      "createdAt": "2026-10-19T11:20:55.093Z",
+      "updatedAt": "2026-10-19T11:20:55.093Z",
+      "starterScene": "dispersion-study"
+    }
+  }
+}

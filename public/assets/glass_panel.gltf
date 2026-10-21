@@ -1,0 +1,123 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Three Render procedural asset generator",
+    "copyright": "CC0 1.0 Universal",
+    "extras": {
+      "license": "CC0-1.0",
+      "source": "scripts/generate-public-assets.mjs"
+    }
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Glass Panel",
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Glass Panel",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2
+          },
+          "indices": 0,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Clear Glass",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 0.03,
+        "metallicFactor": 0
+      },
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1
+        },
+        "KHR_materials_ior": {
+          "ior": 1.5
+        }
+      }
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_transmission",
+    "KHR_materials_ior"
+  ],
+  "buffers": [
+    {
+      "byteLength": 648,
+      "uri": "data:application/octet-stream;base64,AAACAAEAAgADAAEABAAGAAUABgAHAAUACAAKAAkACgALAAkADAAOAA0ADgAPAA0AEAASABEAEgATABEAFAAWABUAFgAXABUAzczMPc3MTD5vEoM7zczMPc3MTD5vEoO7zczMPc3MzLBvEoM7zczMPc3MzLBvEoO7zczMvc3MTD5vEoO7zczMvc3MTD5vEoM7zczMvc3MzLBvEoO7zczMvc3MzLBvEoM7zczMvc3MTD5vEoO7zczMPc3MTD5vEoO7zczMvc3MTD5vEoM7zczMPc3MTD5vEoM7zczMvc3MzLBvEoM7zczMPc3MzLBvEoM7zczMvc3MzLBvEoO7zczMPc3MzLBvEoO7zczMvc3MTD5vEoM7zczMPc3MTD5vEoM7zczMvc3MzLBvEoM7zczMPc3MzLBvEoM7zczMPc3MTD5vEoO7zczMvc3MTD5vEoO7zczMPc3MzLBvEoO7zczMvc3MzLBvEoO7AACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 72,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 72,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 360,
+      "byteLength": 288,
+      "target": 34962
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "min": [
+        -0.10000000149011612,
+        -1.4901161415892261e-9,
+        -0.004000000189989805
+      ],
+      "max": [
+        0.10000000149011612,
+        0.20000000298023224,
+        0.004000000189989805
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    }
+  ]
+}

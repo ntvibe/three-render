@@ -1,0 +1,309 @@
+{
+  "project": {
+    "version": 1,
+    "name": "Area Aperture Beam Study",
+    "rootNodeIds": [
+      "node_5672cddb-d5d0-43b1-801a-8be4a86bf7a5",
+      "node_4050263b-be4f-4163-a908-e1fea97a90ff",
+      "node_a21ebb8c-720d-44ba-9e4f-9849159468d0"
+    ],
+    "nodes": {
+      "node_4050263b-be4f-4163-a908-e1fea97a90ff": {
+        "id": "node_4050263b-be4f-4163-a908-e1fea97a90ff",
+        "name": "Ground",
+        "nodeType": "asset",
+        "assetId": "asset_15257d1d-cd97-4bd9-a44e-7ce389cb9aa0",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_15257d1d-cd97-4bd9-a44e-7ce389cb9aa0::binding::0:0": "floor"
+        },
+        "primitiveParameters": {
+          "width": 4,
+          "depth": 4,
+          "widthSegments": 1,
+          "depthSegments": 1
+        }
+      },
+      "node_a21ebb8c-720d-44ba-9e4f-9849159468d0": {
+        "id": "node_a21ebb8c-720d-44ba-9e4f-9849159468d0",
+        "name": "Block",
+        "nodeType": "asset",
+        "assetId": "asset_78637152-58b1-4ea7-81c6-0966a74ee30b",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            0,
+            0.08,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {
+          "asset_78637152-58b1-4ea7-81c6-0966a74ee30b::binding::0:0": "cube"
+        },
+        "primitiveParameters": {
+          "width": 0.4,
+          "height": 0.55,
+          "depth": 0.4,
+          "widthSegments": 1,
+          "heightSegments": 1,
+          "depthSegments": 1,
+          "fillet": 0.015,
+          "filletSegments": 3
+        }
+      },
+      "node_5672cddb-d5d0-43b1-801a-8be4a86bf7a5": {
+        "id": "node_5672cddb-d5d0-43b1-801a-8be4a86bf7a5",
+        "name": "Area aperture",
+        "nodeType": "light",
+        "parentId": null,
+        "children": [],
+        "visible": true,
+        "locked": false,
+        "isolated": false,
+        "isGroup": false,
+        "transform": {
+          "position": [
+            0,
+            1.7,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "materialBindings": {},
+        "light": {
+          "type": "area",
+          "shape": "rectangle",
+          "color": "#ffffff",
+          "intensity": 2,
+          "width": 1.2,
+          "height": 0.8,
+          "radius": 0.05,
+          "sunAngle": 0.526,
+          "angle": 36,
+          "penumbra": 0.15,
+          "distance": 0,
+          "decay": 2,
+          "showGizmo": false,
+          "shadowSpread": 0
+        }
+      }
+    },
+    "assets": {
+      "asset_15257d1d-cd97-4bd9-a44e-7ce389cb9aa0": {
+        "id": "asset_15257d1d-cd97-4bd9-a44e-7ce389cb9aa0",
+        "name": "Plane",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "plane",
+        "sourceUri": "primitive:plane",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_15257d1d-cd97-4bd9-a44e-7ce389cb9aa0::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      },
+      "asset_78637152-58b1-4ea7-81c6-0966a74ee30b": {
+        "id": "asset_78637152-58b1-4ea7-81c6-0966a74ee30b",
+        "name": "Cube",
+        "kind": "model",
+        "sourceKind": "primitive",
+        "primitive": "cube",
+        "sourceUri": "primitive:cube",
+        "defaultScale": [
+          1,
+          1,
+          1
+        ],
+        "pivotHint": "floor",
+        "meshBindings": [
+          {
+            "id": "asset_78637152-58b1-4ea7-81c6-0966a74ee30b::binding::0:0",
+            "label": "Surface",
+            "meshPath": "0",
+            "slot": 0,
+            "defaultMaterialId": "__default_diffuse__"
+          }
+        ]
+      }
+    },
+    "materials": {
+      "floor": {
+        "id": "floor",
+        "name": "Ground",
+        "color": "#bbbbbb",
+        "emissive": "#000000",
+        "emissiveIntensity": 0,
+        "roughness": 1,
+        "metalness": 0,
+        "specularIntensity": 0,
+        "specularColor": "#ffffff",
+        "transmission": 0,
+        "ior": 1.5,
+        "thickness": 0,
+        "thinWalled": false,
+        "attenuationColor": "#ffffff",
+        "attenuationDistance": 0,
+        "clearcoat": 0,
+        "clearcoatRoughness": 0,
+        "sheen": 0,
+        "sheenColor": "#ffffff",
+        "sheenRoughness": 1,
+        "iridescence": 0,
+        "iridescenceIOR": 1.3,
+        "iridescenceThicknessMin": 100,
+        "iridescenceThicknessMax": 400,
+        "anisotropy": 0,
+        "anisotropyRotation": 0,
+        "dispersion": 0,
+        "opacity": 1,
+        "transparent": false
+      },
+      "cube": {
+        "id": "cube",
+        "name": "Blue block",
+        "color": "#47738c",
+        "emissive": "#000000",
+        "emissiveIntensity": 0,
+        "roughness": 0.7,
+        "metalness": 0,
+        "specularIntensity": 1,
+        "specularColor": "#ffffff",
+        "transmission": 0,
+        "ior": 1.5,
+        "thickness": 0,
+        "thinWalled": false,
+        "attenuationColor": "#ffffff",
+        "attenuationDistance": 0,
+        "clearcoat": 0,
+        "clearcoatRoughness": 0,
+        "sheen": 0,
+        "sheenColor": "#ffffff",
+        "sheenRoughness": 1,
+        "iridescence": 0,
+        "iridescenceIOR": 1.3,
+        "iridescenceThicknessMin": 100,
+        "iridescenceThicknessMax": 400,
+        "anisotropy": 0,
+        "anisotropyRotation": 0,
+        "dispersion": 0,
+        "opacity": 1,
+        "transparent": false
+      }
+    },
+    "cameras": {
+      "cam_99abde11-ec39-4f4e-935c-3a85c154269f": {
+        "id": "cam_99abde11-ec39-4f4e-935c-3a85c154269f",
+        "name": "Main Camera",
+        "projection": "perspective",
+        "position": [
+          2.2,
+          2,
+          3
+        ],
+        "target": [
+          0,
+          0.1,
+          0
+        ],
+        "fov": 45,
+        "focalLength": 45,
+        "zoom": 1,
+        "near": 0.001,
+        "far": 200
+      }
+    },
+    "activeCameraId": "cam_99abde11-ec39-4f4e-935c-3a85c154269f",
+    "environment": {
+      "enabled": false,
+      "rotation": 0,
+      "intensity": 0,
+      "backgroundVisible": false
+    },
+    "renderer": {
+      "mode": "render",
+      "exposure": 1,
+      "transparentBackground": false,
+      "live": {
+        "bounces": 2,
+        "transmissionBounces": 16,
+        "renderScale": 0.45,
+        "tiles": 2,
+        "sampleLimit": 12
+      },
+      "render": {
+        "bounces": 3,
+        "transmissionBounces": 8,
+        "renderScale": 0.8,
+        "tiles": 1,
+        "sampleLimit": 128
+      },
+      "denoise": {
+        "enabled": false,
+        "applyToLive": false,
+        "blend": 0.6,
+        "maxTileSize": 512
+      }
+    },
+    "metadata": {
+      "createdAt": "2026-10-19T15:17:52.573Z",
+      "updatedAt": "2026-10-19T15:18:06.986Z",
+      "starterScene": "aperture-beam-study"
+    }
+  }
+}

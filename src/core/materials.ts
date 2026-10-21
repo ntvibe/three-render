@@ -1,0 +1,113 @@
+import type { MaterialRecord } from './types';
+import { createId } from './id';
+
+export const DEFAULT_DIFFUSE_MATERIAL_ID = '__default_diffuse__';
+
+export function createMaterialRecord(
+  partial?: Partial<MaterialRecord>,
+): MaterialRecord {
+  return {
+    id: partial?.id ?? createId('mat'),
+    name: partial?.name ?? 'Material',
+    color: partial?.color ?? '#ffffff',
+    emissive: partial?.emissive ?? '#000000',
+    emissiveIntensity: partial?.emissiveIntensity ?? 0,
+    roughness: partial?.roughness ?? 0.2,
+    metalness: partial?.metalness ?? 0,
+    specularIntensity: partial?.specularIntensity ?? 1,
+    specularColor: partial?.specularColor ?? '#ffffff',
+    transmission: partial?.transmission ?? 0,
+    ior: partial?.ior ?? 1.5,
+    thickness: partial?.thickness ?? 0,
+    thinWalled: partial?.thinWalled ?? false,
+    attenuationColor: partial?.attenuationColor ?? '#ffffff',
+    attenuationDistance: partial?.attenuationDistance ?? 0,
+    clearcoat: partial?.clearcoat ?? 0,
+    clearcoatRoughness: partial?.clearcoatRoughness ?? 0,
+    sheen: partial?.sheen ?? 0,
+    sheenColor: partial?.sheenColor ?? '#ffffff',
+    sheenRoughness: partial?.sheenRoughness ?? 1,
+    iridescence: partial?.iridescence ?? 0,
+    iridescenceIOR: partial?.iridescenceIOR ?? 1.3,
+    iridescenceThicknessMin: partial?.iridescenceThicknessMin ?? 100,
+    iridescenceThicknessMax: partial?.iridescenceThicknessMax ?? 400,
+    anisotropy: partial?.anisotropy ?? 0,
+    anisotropyRotation: partial?.anisotropyRotation ?? 0,
+    dispersion: partial?.dispersion ?? 0,
+    opacity: partial?.opacity ?? 1,
+    transparent: partial?.transparent ?? false,
+  };
+}
+
+export const MATERIAL_PRESETS = [
+  createMaterialRecord({
+    id: 'preset_matte',
+    name: 'Matte Plastic',
+    color: '#f4f2ea',
+    roughness: 0.78,
+    metalness: 0,
+  }),
+  createMaterialRecord({
+    id: 'preset_gloss',
+    name: 'Glossy Plastic',
+    color: '#f7b731',
+    roughness: 0.14,
+    metalness: 0,
+    clearcoat: 0.3,
+    specularIntensity: 0.8,
+  }),
+  createMaterialRecord({
+    id: 'preset_brushed',
+    name: 'Brushed Metal',
+    color: '#d1d4db',
+    roughness: 0.35,
+    metalness: 0.92,
+  }),
+  createMaterialRecord({
+    id: 'preset_chrome',
+    name: 'Chrome',
+    color: '#ffffff',
+    roughness: 0.05,
+    metalness: 1,
+  }),
+  createMaterialRecord({
+    id: 'preset_glass',
+    name: 'Glass',
+    color: '#ffffff',
+    roughness: 0.02,
+    transmission: 1,
+    thickness: 0.006,
+    ior: 1.52,
+    specularIntensity: 1,
+  }),
+  createMaterialRecord({
+    id: 'preset_frosted',
+    name: 'Frosted Glass',
+    color: '#ffffff',
+    roughness: 0.45,
+    transmission: 1,
+    thickness: 0.008,
+    ior: 1.45,
+    specularIntensity: 1,
+  }),
+  createMaterialRecord({
+    id: 'preset_prism',
+    name: 'Prism Glass',
+    color: '#ffffff',
+    roughness: 0.012,
+    transmission: 1,
+    thickness: 0.04,
+    attenuationDistance: 0.75,
+    ior: 1.62,
+    dispersion: 0.72,
+    specularIntensity: 1,
+  }),
+  createMaterialRecord({
+    id: 'preset_emissive',
+    name: 'Emissive Strip',
+    color: '#fff4db',
+    emissive: '#fff1c1',
+    emissiveIntensity: 2.5,
+    roughness: 0.2,
+  }),
+];

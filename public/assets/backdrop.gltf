@@ -1,0 +1,112 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Three Render procedural asset generator",
+    "copyright": "CC0 1.0 Universal",
+    "extras": {
+      "license": "CC0-1.0",
+      "source": "scripts/generate-public-assets.mjs"
+    }
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Studio Backdrop",
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Studio Backdrop",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2
+          },
+          "indices": 0,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Neutral Studio",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.35,
+          0.35,
+          0.35,
+          1
+        ],
+        "roughnessFactor": 0.7,
+        "metallicFactor": 0
+      },
+      "doubleSided": true
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1608,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 312,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 312,
+      "byteLength": 648,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 960,
+      "byteLength": 648,
+      "target": 34962
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5123,
+      "count": 156,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 54,
+      "type": "VEC3",
+      "min": [
+        -3,
+        0,
+        -3
+      ],
+      "max": [
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 54,
+      "type": "VEC3"
+    }
+  ]
+}
