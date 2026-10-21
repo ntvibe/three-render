@@ -15,6 +15,7 @@ import { installRealtimeGlassShader } from './realtimeGlass';
 import { installAreaShadows } from './areaShadows';
 import { normalizeShadowSpread } from '../core/lights';
 import { getIsolationNodeIds, isObjectVisible } from '../core/sceneVisibility';
+import { publicAssetUrl } from '../core/publicAssets';
 import type {
   AssetRecord,
   CameraRecord,
@@ -1125,7 +1126,7 @@ export class EditorEngine {
     const next = (async () => {
       const gltf = asset.sourceKind === 'primitive' && asset.primitive
         ? { scene: createPrimitiveMesh(asset.primitive) }
-        : await this.gltfLoader.loadAsync(asset.sourceUri);
+        : await this.gltfLoader.loadAsync(publicAssetUrl(asset.sourceUri));
       let meshIndex = 0;
       const meshBindings: MeshBindingRecord[] = [];
       const materials: MaterialRecord[] = [];
@@ -1170,8 +1171,8 @@ export class EditorEngine {
     const cached = this.environmentCache.get(asset.id);
     if (cached) return cached;
     const promise = (asset.mimeType === 'image/exr' || /\.exr$/i.test(asset.sourceUri)
-      ? this.exrLoader.loadAsync(asset.sourceUri)
-      : this.hdrLoader.loadAsync(asset.sourceUri)).then((texture) => {
+      ? this.exrLoader.loadAsync(publicAssetUrl(asset.sourceUri))
+      : this.hdrLoader.loadAsync(publicAssetUrl(asset.sourceUri))).then((texture) => {
         texture.mapping = THREE.EquirectangularReflectionMapping;
         return texture;
       });

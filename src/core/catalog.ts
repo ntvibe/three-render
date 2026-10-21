@@ -6,9 +6,10 @@ import type {
   TransformRecord,
 } from './types';
 import { createId } from './id';
+import { publicAssetUrl } from './publicAssets';
 
 export async function loadCatalogManifest(): Promise<CatalogManifest> {
-  const response = await fetch('/catalog/catalog.json');
+  const response = await fetch(publicAssetUrl('/catalog/catalog.json'));
   if (!response.ok) {
     throw new Error(`Failed to load catalog manifest (${response.status})`);
   }

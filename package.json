@@ -7,7 +7,9 @@
     "dev": "vite",
     "test": "node scripts/run-tests.mjs",
     "build": "tsc -b && vite build",
+    "build:pages": "tsc -b && vite build --base=/three-render/",
     "preview": "vite preview",
+    "preview:pages": "vite preview --base=/three-render/",
     "assets:generate": "node scripts/generate-public-assets.mjs",
     "check:public": "node scripts/check-public-release.mjs",
     "notices:generate": "node scripts/generate-third-party-notices.mjs"

@@ -58,6 +58,7 @@ import { canEditMaterial, getMaterialUsages, materialUsageKey } from './core/mat
 import { subtreeHasLockedNode } from './core/sceneHierarchy';
 import { localTransformFromWorld, worldTransformForNode } from './core/sceneTransforms';
 import { loadCatalogManifest } from './core/catalog';
+import { publicAssetUrl } from './core/publicAssets';
 import {
   downloadProjectFile,
   loadAutosave,
@@ -1544,7 +1545,7 @@ function AssetCard({
       }}
       onClick={onInsert}
     >
-      <img src={item.thumbnail} alt={item.name} />
+      <img src={publicAssetUrl(item.thumbnail)} alt={item.name} />
       <strong>{item.name}</strong>
       <span>{item.category}</span>
     </button>

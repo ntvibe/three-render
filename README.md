@@ -2,6 +2,8 @@
 
 A local-first 3D scene editor for the browser. Assemble scenes, edit physical materials and lighting, and switch between fast interactive previews and progressive path tracing.
 
+**[Open the live editor](https://ntvibe.github.io/three-render/)** — runs entirely in your browser.
+
 Built with React, TypeScript, Three.js, and three-gpu-pathtracer. No account or backend is required. Projects autosave locally in the browser and can be saved as `.studio.json` files.
 
 ![Three Render editor with its default CC0 scene](docs/images/editor.png)
@@ -16,6 +18,19 @@ npm run dev -- --host 127.0.0.1 --port 5180 --strictPort
 ```
 
 Open [localhost:5180](http://127.0.0.1:5180/). WebGL2 and a compatible browser/GPU are required. This is an early desktop-first editor; smaller screens have collapsible panels and compact viewport controls.
+
+## Static hosting
+
+The `Deploy GitHub Pages` workflow publishes the `main` branch at [ntvibe.github.io/three-render](https://ntvibe.github.io/three-render/) after asset checks, regression tests, and a production build. Local development still uses the root URL.
+
+For a local preview of the Pages build:
+
+```sh
+npm run build:pages
+npm run preview:pages -- --host 127.0.0.1 --port 5184
+```
+
+Open `http://127.0.0.1:5184/three-render/`. Built-in assets resolve relative to the hosting prefix; saved project asset references remain portable. Autosave is local to each website origin, so export a project file when moving between localhost and the hosted editor.
 
 ## What you can do
 

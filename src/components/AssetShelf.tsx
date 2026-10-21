@@ -3,6 +3,7 @@ import { ChevronDown, ChevronUp, Layers3, Plus, Search, Upload } from '../icons'
 import { PrimitiveIcon } from './PrimitiveIcon';
 import { MATERIAL_PRESETS } from '../core/materials';
 import { PRIMITIVES } from '../core/primitives';
+import { publicAssetUrl } from '../core/publicAssets';
 import type { CatalogItem, MaterialRecord, PrimitiveType } from '../core/types';
 import { viewportDragMime } from './Viewport';
 
@@ -58,7 +59,7 @@ export function AssetShelf({ items, materials, selectedMaterialId, onMaterial, o
         {visibleItems.map((item) => <button className="library-tile model-tile" key={item.id}
           title={item.kind === 'environment' ? `Use ${item.name}` : `Add ${item.name}`}
           draggable onDragStart={(event) => { event.dataTransfer.setData(viewportDragMime, item.id); event.dataTransfer.effectAllowed = 'copy'; }}
-          onClick={() => onInsert(item.id)}><img src={item.thumbnail} alt="" /><span>{item.name}</span></button>)}
+          onClick={() => onInsert(item.id)}><img src={publicAssetUrl(item.thumbnail)} alt="" /><span>{item.name}</span></button>)}
       </>}
       {!hasResults ? <p className="library-empty">No {tab} match “{search}”.</p> : null}
     </div> : null}

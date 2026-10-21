@@ -6,6 +6,7 @@ import { readProjectFile } from '../src/core/persistence';
 import { createMaterialRecord } from '../src/core/materials';
 import { getMaterialUsages } from '../src/core/materialUsage';
 import { getIsolationNodeIds, isObjectVisible } from '../src/core/sceneVisibility';
+import { publicAssetUrl } from '../src/core/publicAssets';
 import { createPrimitiveGeometry, normalizePrimitiveParameters, PRIMITIVES } from '../src/core/primitives';
 import { parseNumericExpression, adjustNumericValue } from '../src/core/numeric';
 import { BoxGeometry, Group, Mesh, Raycaster, BufferGeometryLoader, MeshPhysicalMaterial, ShaderChunk, Matrix4, Vector3 } from 'three';
@@ -30,6 +31,17 @@ export async function runRegressions() {
   };
   const state = () => useEditorStore.getState();
   const close = (a: number[], b: number[]) => a.forEach((value, index) => assert.ok(Math.abs(value - b[index]) < 1e-8));
+
+  await test('Bundled URLs work at a repository prefix without rewriting user imports', () => {
+    for (const path of ['/assets/backdrop.gltf', '/assets/studio_small_09_1k.hdr', '/catalog/catalog.json', '/catalog/thumbs/environment.svg', '/examples/glass-dispersion.studio.json']) {
+      assert.equal(publicAssetUrl(path, '/three-render/'), `/three-render${path}`);
+      assert.equal(publicAssetUrl(path, '/'), path);
+      assert.equal(publicAssetUrl(publicAssetUrl(path, '/three-render/'), '/three-render/'), `/three-render${path}`);
+    }
+    for (const path of ['data:model/gltf+json;base64,e30=', 'blob:https://example.com/model', 'https://example.com/model.glb', 'primitive:cube', 'geometry:mesh']) {
+      assert.equal(publicAssetUrl(path, '/three-render/'), path);
+    }
+  });
 
   await test('World placement survives rotated and scaled parenting and unparenting', () => {
     state().addPrimitive('cube');
